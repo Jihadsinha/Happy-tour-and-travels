@@ -52,15 +52,16 @@
           <form id="searchForm" class="search-grid">
             <label>
               <span>Where are you going?</span>
-              <input id="destination" type="text" placeholder="e.g. Cox's Bazar, Maldives" />
+              <input id="destination" type="text" placeholder="e.g. Cox's Bazar, Maldives" required />
             </label>
             <label>
               <span>Travel date</span>
-              <input type="date" id="travelDate" />
+              <input type="date" id="travelDate" required />
             </label>
             <label>
               <span>Travelers</span>
-              <select id="travelers">
+              <select id="travelers" required>
+                <option value="">Select travelers</option>
                 <option>1 Traveler</option>
                 <option selected>2 Travelers</option>
                 <option>3 Travelers</option>
@@ -162,13 +163,42 @@
 
     <section class="section soft" id="services">
       <div class="container">
-        <div class="services-banner">
-          <img src="tour.jpg" alt="description">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">COMPLETE TRAVEL SUPPORT</div>
+            <h2>Travel Services</h2>
+          </div>
+          <p>We offer comprehensive travel solutions beyond just tours and hotels.</p>
         </div>
         <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">✈️</div>
+            <h3>Airport Transfers</h3>
+            <p>Reliable ground transportation to and from airports. Comfortable rides, professional drivers, and guaranteed punctuality.</p>
+            <a href="#contact" class="text-link">Learn more →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🎫</div>
+            <h3>Visa Assistance</h3>
+            <p>Expert guidance on visa requirements for your destination. We help streamline the documentation process.</p>
+            <a href="#contact" class="text-link">Learn more →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🏨</div>
+            <h3>Travel Insurance</h3>
+            <p>Comprehensive travel insurance options to protect your journey. Coverage for medical emergencies and trip cancellations.</p>
+            <a href="#contact" class="text-link">Learn more →</a>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🗺️</div>
+            <h3>Tour Guides</h3>
+            <p>Experienced local guides who know every detail. Enhance your travel experience with expert insights and cultural knowledge.</p>
+            <a href="#contact" class="text-link">Learn more →</a>
+          </article>
         </div>
       </div>
     </section>
+
     <section class="cta-section" id="about">
       <div class="container cta-inner">
         <div>
@@ -197,13 +227,13 @@
           </div>
         </div>
         <form class="contact-form" id="contactForm">
-          <input type="text" placeholder="Your name" required />
-          <input type="email" placeholder="Email address" required />
-          <input type="tel" placeholder="Phone number" />
-          <input type="text" placeholder="Destination" />
-          <textarea placeholder="Tell us about your trip..." rows="5"></textarea>
+          <input type="text" id="contactName" placeholder="Your name" required />
+          <input type="email" id="contactEmail" placeholder="Email address" required />
+          <input type="tel" id="contactPhone" placeholder="Phone number" />
+          <input type="text" id="contactDestination" placeholder="Destination" />
+          <textarea id="contactMessage" placeholder="Tell us about your trip..." rows="5" required></textarea>
           <button class="btn btn-primary" type="submit">Send Enquiry</button>
-          <p id="contactMessage" class="form-message"></p>
+          <p id="formMessage" class="form-message"></p>
         </form>
       </div>
     </section>
