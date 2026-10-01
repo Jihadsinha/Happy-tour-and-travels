@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Happy Tour & Travelers - Explore, plan and book tours, hotels, airport services and travel experiences." />
+  <title>Happy Tour & Travelers | Explore. Plan. Book Your Perfect Trip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <img src="logo.jpg" alt="Happy Tour & Travelers logo" />
+        <span>Happy Tour & Travelers</span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-controls="nav" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#tours">Tours</a>
+        <a href="#hotels">Hotels</a>
+        <a href="#services">Services</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="sabbir.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="eyebrow">TRAVEL • DISCOVER • EXPERIENCE</div>
+        <h1>Explore. Plan. <span>Book Your Perfect Trip.</span></h1>
+        <p>Discover holiday packages, sightseeing tours, hotel stays, airport assistance and reliable travel services in one place.</p>
+        <div class="hero-actions">
+          <a href="#tours" class="btn btn-primary">Explore Tours</a>
+          <a href="#contact" class="btn btn-light">Plan My Trip</a>
+        </div>
+
+        <div class="search-card">
+          <div class="search-tabs">
+            <button class="tab active" data-type="tour">Tours</button>
+            <button class="tab" data-type="ride">Transfers</button>
+          </div>
+          <form id="searchForm" class="search-grid">
+            <label>
+              <span>Where are you going?</span>
+              <input id="destination" type="text" placeholder="e.g. Cox's Bazar, Maldives" />
+            </label>
+            <label>
+              <span>Travel date</span>
+              <input type="date" id="travelDate" />
+            </label>
+            <label>
+              <span>Travelers</span>
+              <select id="travelers">
+                <option>1 Traveler</option>
+                <option selected>2 Travelers</option>
+                <option>3 Travelers</option>
+                <option>4+ Travelers</option>
+              </select>
+            </label>
+            <button class="btn btn-primary search-btn" type="submit">Search</button>
+          </form>
+          <p class="search-message" id="searchMessage"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><strong>2015</strong><span>Founded</span></div>
+        <div><strong>One Stop</strong><span>Travel Solutions</span></div>
+        <div><strong>Bangladesh</strong><span>Based Travel Platform</span></div>
+        <div><strong>24/7</strong><span>Travel Assistance</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">POPULAR PLACES</div>
+            <h2>Top Destinations</h2>
+          </div>
+          <p>From Bangladesh getaways to international escapes, find a destination for your next adventure.</p>
+        </div>
+        <div class="destination-grid">
+          <a class="destination-card d1" href="#tours"><span>Tetulia</span><small>Hill views & fresh air</small></a>
+          <a class="destination-card d2" href="#tours"><span>Kuakata</span><small>Sea beach escape</small></a>
+          <a class="destination-card d3" href="#tours"><span>Nepal</span><small>Mountains & culture</small></a>
+          <a class="destination-card d4" href="#tours"><span>Saudi Arabia</span><small>Umrah & travel</small></a>
+          <a class="destination-card d5" href="#tours"><span>Singapore</span><small>City experiences</small></a>
+          <a class="destination-card d6" href="#tours"><span>India</span><small>Culture & adventure</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="tours">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">READY TO GO</div>
+            <h2>Featured Tour Packages</h2>
+          </div>
+          <a class="text-link" href="#contact">Customize a trip →</a>
+        </div>
+        <div class="card-grid">
+          <article class="tour-card">
+            <div class="card-image beach"><span>Bangladesh</span></div>
+            <div class="card-body"><h3>Cox's Bazar Escape</h3><p>Relax by the sea with an easy, memorable coastal getaway.</p><a href="#contact">Enquire now →</a></div>
+          </article>
+          <article class="tour-card">
+            <div class="card-image hills"><span>Bangladesh</span></div>
+            <div class="card-body"><h3>Sajek & Khagrachari</h3><p>Discover hill landscapes, local culture and refreshing mountain air.</p><a href="#contact">Enquire now →</a></div>
+          </article>
+          <article class="tour-card">
+            <div class="card-image island"><span>Sreemangal</span></div>
+            <div class="card-body"><h3>Sreemangal</h3><p>Enjoy a refreshing tea-garden escape filled with nature, calm and scenic beauty.</p><a href="#contact">Enquire now →</a></div>
+          </article>
+          <article class="tour-card">
+            <div class="card-image desert"><span>Inani Beach</span></div>
+            <div class="card-body"><h3>Inani Beach</h3><p>Enjoy a peaceful seaside retreat with golden sand, sea breeze and easy coastal relaxation.</p><a href="#contact">Enquire now →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hotels">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">STAY COMFORTABLY</div>
+            <h2>Hotel Booking</h2>
+          </div>
+          <p>Find comfortable stays at popular destinations and build your trip around the experience you want.</p>
+        </div>
+        <div class="hotel-layout">
+          <div class="hotel-feature">
+            <div class="hotel-copy">
+              <div class="eyebrow">COX'S BAZAR</div>
+              <h3>Beach stays made easy.</h3>
+              <p>Explore hotel options, compare your plans and choose accommodation that fits your trip.</p>
+              <a href="#contact" class="btn btn-primary">Ask About Hotels</a>
+            </div>
+          </div>
+          <div class="hotel-list">
+            <div class="mini-hotel"><div class="hotel-icon">⌂</div><div><strong>Beach Resorts</strong><span>Cox's Bazar</span></div><b>Explore</b></div>
+            <div class="mini-hotel"><div class="hotel-icon">★</div><div><strong>City Hotels</strong><span>Dhaka & beyond</span></div><b>Explore</b></div>
+            <div class="mini-hotel"><div class="hotel-icon">◈</div><div><strong>International Stays</strong><span>Worldwide destinations</span></div><b>Explore</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="services">
+      <div class="container">
+        <div class="services-banner">
+          <img src="tour.jpg" alt="description">
+        </div>
+        <div class="service-grid">
+        </div>
+      </div>
+    </section>
+    <section class="cta-section" id="about">
+      <div class="container cta-inner">
+        <div>
+          <div class="eyebrow">WHY HAPPY TOUR & TRAVELERS</div>
+          <h2>Your journey deserves a simpler plan.</h2>
+          <p>Happy Tour & Travelers was founded in 2015 to make travel planning more accessible through package comparisons, one-stop solutions and travel services.</p>
+        </div>
+        <div class="cta-points">
+          <div><strong>01</strong><span>Compare travel options</span></div>
+          <div><strong>02</strong><span>Customize your itinerary</span></div>
+          <div><strong>03</strong><span>Get travel support</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="eyebrow">LET'S PLAN</div>
+          <h2>Tell us where you want to go.</h2>
+          <p>Share your destination and travel plans. Our team can help you shape the next step.</p>
+          <div class="contact-details">
+            <a href="tel:+8801787595782">☎ 01787595782</a>
+            <a href="https://www.facebook.com/mdsabbir.ahemmed.96" target="_blank" rel="noopener noreferrer">✉ Facebook Profile</a>
+            <span>⌖ ভাই ভাই কাউন্টার, কালিতলা বাজার, গোবিন্দগঞ্জ, গাইবান্ধা</span>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Email address" required />
+          <input type="tel" placeholder="Phone number" />
+          <input type="text" placeholder="Destination" />
+          <textarea placeholder="Tell us about your trip..." rows="5"></textarea>
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+          <p id="contactMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Happy Tour & Travelers logo" />
+        <p>Explore. Plan. Book Your Perfect Trip.</p>
+      </div>
+      <div><h4>Explore</h4><a href="#tours">Tours</a><a href="#hotels">Hotels</a><a href="#services">Services</a></div>
+      <div><h4>Company</h4><a href="#about">About Us</a><a href="#contact">Contact</a><a href="#contact">Customize Tour</a></div>
+      <div><h4>Contact</h4><a href="tel:+8801787595782">01787595782</a><a href="https://www.facebook.com/mdsabbir.ahemmed.96" target="_blank" rel="noopener noreferrer">Facebook Profile</a></div>
+    </div>
+    <div class="container copyright">© 2026 Happy Tour & Travelers. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
